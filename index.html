@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <script src="script.js"></script> -->
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+    </style>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  </head>
+
+
+
+
+
+
+    <!--  start the nav bar  /*-------------------------------------------------------------- !-->
+      
+  
+
+  <body>
+    <div class="container">
+
+      <!--  --------------------------------------------------------------- !-->
+
+ 
+
+  
+         <div class="header--first">
+        <nav class="nav-first">
+          <div class="logo">
+            <h1>Deli<span>cious </span></h1>
+          </div>
+
+          <div class="list--first" id="menu">
+            <ul>
+              <li><a href="#"> Home </a></li>
+              <li><a href="#"> About </a></li>
+              <li><a href="#"> Chefs </a></li>
+              <li><a href="#"> Contact </a></li>
+            </ul>   
+              <div class="close">
+          <button id="close" class="btn--first">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+
+          </div>
+     </div>
+          <div class="menu--first">
+            <button id="open" class="btn--first">
+                <i class="fa-solid fa-bars oop"></i>
+            </button>
+          </div>
+        </nav>
+
+   
+        </div>
+     
+
+
+
+
+      <!-- /*--------------------------------------------------------------
+       finish the nav bar  
+      -------------------------------------------------------------- -->
+
+      <div class="text-center">
+        <h1 class="h-rest">Welcome to Restaurantly</h1>
+        <h3 class="h-welcome">
+          Welcome to Restaurantly Delivering great food for more than 18 years!
+        </h3>
+        <button class="btn-1">Our Menu</button>
+      </div>
+    </div>
+    <!-- /*--------------------------------------------------------------
+       finish the  nav bar 
+      -------------------------------------------------------------- -->
+
+    <div class="section--2">
+      <div class="title">Some photos from <span>Our Restaurant</span></div>
+
+      <div class="img-resto">
+        <img
+          src="./pr2/gallery/gallery-2.jpg"
+          alt="Image 1"
+          onclick="zoomImage(this.src)"
+        />
+        <img
+          src="./pr2/gallery/gallery-3.jpg"
+          alt="Image 2"
+          onclick="zoomImage(this.src)"
+        />
+        <img
+          src="./pr2/gallery/gallery-4.jpg"
+          alt="Image 3"
+          onclick="zoomImage(this.src)"
+        />
+        <img
+          src="./pr2/gallery/gallery-5.jpg"
+          alt="Image 4"
+          onclick="zoomImage(this.src)"
+        />
+        <img
+          src="./pr2/gallery/gallery-6.jpg"
+          alt="Image 5"
+          onclick="zoomImage(this.src)"
+        />
+        <img
+          src="./pr2/gallery/gallery-8.jpg"
+          alt="Image 6"
+          onclick="zoomImage(this.src)"
+        />
+      </div>
+    </div>
+    <aside>
+      <div id="ZoOm">
+        <img src="" id="imgPrincipale" alt="" />
+      </div>
+    </aside>
+
+    <!-- /*--------------------------------------------------------------
+       finish the first  menu 
+      -------------------------------------------------------------- -->
+
+    <div class="first--menu">
+      <div class="menu-title">
+        <button class="btn-menu">Menu</button>
+        <h3>Check Our Tasty <span>Menu</span></h3>
+      </div>
+      <div class="menu">
+        <a href="#" onclick="SelectMenu('all'); return false;">All</a>
+        <a href="#" onclick="SelectMenu('breakfast'); return false;"
+          >Breakfast</a
+        >
+        <a href="#" onclick="SelectMenu('dinner'); return false;">Dinner</a>
+        <a href="#" onclick="SelectMenu('lunch'); return false;">Lunch</a>
+      </div>
+    </div>
+
+    <div class="second--menu">
+      <div class="first-item" data-category="breakfast">
+        <img
+          src="./img/breafast/bread-barrel.jpg"
+          alt=""
+          onclick="zoomimg(this.src)"
+        />
+        <h2>Sweet Breakfast</h2>
+        <p>argument: Lorem, deren, trataro, filede, nerada</p>
+        <p class="price">125$</p>
+      </div>
+      <div class="first-item" data-category="breakfast">
+        <img src="./img/breafast/cake.jpg" alt="" onclick="zoomimg(this.src)" />
+        <h2>Sweet Breakfast</h2>
+        <p>argument: Lorem, deren, trataro, filede, nerada</p>
+        <p class="price">125$</p>
+      </div>
+      <div class="first-item" data-category="dinner">
+        <img
+          src="./img/dinner/lobster-bisque.jpg"
+          alt=""
+          onclick="zoomimg(this.src)"
+        />
+        <h2>Lobster Bisque</h2>
+        <p>argument: Lorem, deren, trataro, filede, nerada</p>
+        <p class="price">150$</p>
+      </div>
+      <!-- Other items... -->
+      <div class="first-item" data-category="dinner">
+        <img
+          src="./img/dinner/lobster-roll.jpg"
+          alt=""
+          onclick="zoomimg(this)"
+        />
+        <h2>Lobster Bisque</h2>
+        <p>argument: Lorem, deren, trataro, filede, nerada</p>
+        <p class="price">150$</p>
+      </div>
+
+      <div class="first-item" data-category="lunch">
+        <img
+          src="./img/dinner/menu-item-2.png"
+          alt=""
+          onclick="zoomimg(this.src)"
+        />
+        <h2>Lobster Bisque</h2>
+        <p>argument: Lorem, deren, trataro, filede, nerada</p>
+        <p class="price">150$</p>
+      </div>
+
+      <div class="first-item" data-category="lunch">
+        <img
+          src="./img/lunch/menu-item-3.png"
+          alt=""
+          onclick="zoomimg(this.src)"
+        />
+        <h2>Lobster Bisque</h2>
+        <p>argument: Lorem, deren, trataro, filede, nerada</p>
+        <p class="price">150$</p>
+      </div>
+
+      <div class="first-item" data-category="lunch">
+        <img
+          src="./img/lunch/menu-item-4.png"
+          alt=""
+          onclick="zoomimg(this.src)"
+        />
+        <h2>Lobster Bisque</h2>
+        <p>argument: Lorem, deren, trataro, filede, nerada</p>
+        <p class="price">150$</p>
+      </div>
+
+      <div class="first-item" data-category="dinner">
+        <img
+          src="./img/dinner/tuscan-grilled.jpg"
+          alt=""
+          onclick="zoomimg(this.src)"
+        />
+        <h2>Lobster Bisque</h2>
+        <p>argument: Lorem, deren, trataro, filede, nerada</p>
+        <p class="price">150$</p>
+      </div>
+    </div>
+
+    <aside>
+      <div id="zoomdeux">
+        <img src="" id="imgtwo" alt="" />
+      </div>
+    </aside>
+
+    <!-- /*--------------------------------------------------------------
+       finish the second   menu 
+      -------------------------------------------------------------- -->
+ 
+      
+        <div class="revuie--1">
+          <h1>What Are They Saying About <span>Us</span></h1>
+        </div>
+
+        <header>
+
+
+          <div id="div">
+            <img src=" " alt="">
+            <h1> </h1>
+            <p></p>
+           
+            
+          
+          </div>
+          
+          
+          
+             <div class="prin" id="divone">
+               
+               <img src="./img/testimonials/testimonials-1.jpg" alt="">
+                <h1>this image is for camera </h1>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                  Blanditiis eaque sint quisquam hic placeat illo doloremque <br>
+                  possimus ducimus, omnis tempore corrupti maiores tempora quam <br>
+                  atque aliquam sapiente consequatur aut quod.</p>
+                <i class="fa-solid fa-star icon"></i>
+                      <i class="fa-solid fa-star icon"></i>
+                      <i class="fa-solid fa-star icon"></i>
+                      <i class="fa-solid fa-star icon"></i>
+                      <i class="fa-solid fa-star icon"></i>
+             </div>
+          
+              <div class="protwo" id="divtwo">
+                <img src="./img/testimonials/testimonials-2.jpg" alt="">
+                <h1>this image is for light </h1>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.  <br>
+                  Blanditiis eaque sint quisquam hic placeat illo doloremque  <br>
+                  possimus ducimus, omnis tempore corrupti maiores tempora quam  <br>
+                  atque aliquam sapiente consequatur aut quod.</p>
+                <i class="fa-solid fa-star icon"></i>
+                <i class="fa-solid fa-star icon"></i>
+                <i class="fa-solid fa-star icon"></i>
+                <i class="fa-solid fa-star icon"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+          
+          
+      
+      
+              <div class="prothree" id="divthree">
+                <img src="./img/testimonials/testimonials-3.jpg" alt="">
+                <h1>this image is for three </h1>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                  Blanditiis eaque sint quisquam hic placeat illo doloremque <br>
+                  possimus ducimus, omnis tempore corrupti maiores tempora quam <br>
+                  atque aliquam sapiente consequatur aut quod.</p>
+                <i class="fa-solid fa-star icon"></i>
+                <i class="fa-solid fa-star icon"></i>
+                <i class="fa-solid fa-star icon"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+      
+              
+      
+              <div class="prothree" id="divfour">
+                <img src="./img/testimonials/testimonials-1.jpg" alt="">
+                <h1>this image is for three </h1>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.  <br>
+                  Blanditiis eaque sint quisquam hic placeat illo doloremque  <br>
+                  possimus ducimus, omnis tempore corrupti maiores tempora quam  <br>
+                  atque aliquam sapiente consequatur aut quod.</p>
+                <i class="fa-solid fa-star icon"></i>
+                <i class="fa-solid fa-star icon"></i>
+                <i class="fa-solid fa-star icon"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+      
+              
+        </header>
+      
+
+
+
+         
+     
+    <!-- /*--------------------------------------------------------------finish the  reviue and start the chef  -------------------------------------------------------------- -->
+
+    <article class="Chefs">
+      <div class="chef">
+        <img src="./chefs/chefs-2.jpg" alt="" id="imgHover" />
+        <div class="info" id="infOchef">
+          <h2>Sarah Jhonson</h2>
+          <h4>Cook</h4>
+          <div class="icon--chef">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="chef">
+        <img src="./chefs/chefs-1.jpg" alt="" id="imgHover1" />
+        <div class="info" id="infOchef1">
+          <h2>William Anderson</h2>
+          <h4>Patissier</h4>
+          <div class="icon--chef">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="chef">
+        <img src="./chefs/chefs-3.jpg" alt="" id="imgHover2" />
+        <div class="info" id="infOchef2">
+          <h2>Walter White</h2>
+          <h4>Master Chef</h4>
+          <div class="icon--chef">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- /*--------------------------------------------------------------finish the  reviue and start the chef  -------------------------------------------------------------- -->
+
+    <section class="last">
+      <div class="adress">
+        <h3>
+          <span> <i class="fa-solid fa-location-dot"></i> </span> &nbsp;&nbsp;Adress
+        </h3>
+        <h4>sidi el aidi settat</h4>
+      </div>
+
+      <div class="contact">
+        <h3>
+          <span> <i class="fa-solid fa-phone"></i>&nbsp;&nbsp;</span>Contact
+        </h3>
+        <h4>Phone:+11 5589 55488 55</h4>
+        <h4>Email: info@example.com</h4>
+      </div>
+
+      <div class="OpeningHours">
+        <h3>
+          <span> <i class="fa-solid fa-clock"></i>&nbsp;&nbsp;</span>Opening
+          Hours
+        </h3>
+        <h4>Mon-Sat: 11AM - 23PM</h4>
+        <h4>Sunday: Closed</h4>
+      </div>
+
+      <div class="FollowUs">
+        <h3>Follow Us</h3>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+    </section>
+
+   <!-- /*--------------------------------------------------------------finish the  reviue and start the chef  -------------------------------------------------------------- -->
+
+
+<br>
+ 
+  <h5>Designed  Created by <span>Yassine Khalis  </span></h5>
+<h6>khalisseyassine03@gmail.com</h6>
+ <hr>
+ <hr>
+ <hr>
+ <hr>
+ <hr>
+ <hr>
+ <hr>
+ <hr>
+ <hr>
+<!-- fix the problme in in show the menu and hide him  -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
